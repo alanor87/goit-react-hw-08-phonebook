@@ -26,7 +26,7 @@ class InputForm extends React.Component {
   render() {
     return (
       <section className={styles.newEntrySection}>
-        <form className={styles.inputForm} onSubmit={this.onSubmitEntry}>
+        <form className="inputForm" onSubmit={this.onSubmitEntry}>
           <label className="inputLabel">
             First / Last name :
             <input
