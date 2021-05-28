@@ -1,0 +1,17 @@
+.userNav {
+    display: flex;
+    align-items: center;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+}
+
+.activeNavLink {
+    color: rgb(51, 194, 233);
+}
+
+.navLink:not(:last-child) {
+    margin-right: 10px;
+}
