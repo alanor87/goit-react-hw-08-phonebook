@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import NavHeader from './components/NavHeader';
-import InputForm from './components/InputForm/';
-import Filter from './components/Filter'
-import PbookList from './components/PbookList';
-import './App.css';
+import ContactsView from './views/ContactsView'
 
 class App extends Component {
 
@@ -11,13 +8,8 @@ class App extends Component {
     return (
       <>
         <NavHeader />
-      <div className="App" >
-        <h1>PhoneBook / home</h1>
-        <InputForm />
-        <Filter />
-        <PbookList />
-        </div>
-        </>
+        <ContactsView />
+      </>
     );
   }
 

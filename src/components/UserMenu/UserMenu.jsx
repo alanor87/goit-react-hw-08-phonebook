@@ -5,7 +5,7 @@ const UserMenu = ({email = 'hello@mail.com'}) => {
     return (
         <div className={styles.userMenu}>
             <span className={styles.userEmail}>{email}</span>
-            <button className={styles.logoutBtn} type="button"></button>
+            <button className={styles.logoutBtn} type="button">Log out</button>
         </div>
     )
 }

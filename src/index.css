@@ -6,7 +6,7 @@
 
 body {
   background: linear-gradient(to right, #659999, #f4791f);
-  padding-top: 60px;
+  padding-top: 80px;
   color: white;
 }
 
@@ -29,6 +29,7 @@ ul {
 }
 
 h1 {
+  text-align: center;
   font-size: 40px;
   margin-bottom: 30px;
 }
@@ -58,32 +59,32 @@ input {
   padding: 5px;
   border: none;
 }
+/* 
+  .App {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    padding: 20px 40px;
+  } */
 
-.App {
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 10px;
-  background: linear-gradient(to right, #2193b0, #6dd5ed);
-  padding: 20px 40px;
-}
-
-.inputLabel {
-  width: 85%;
-  display: block;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 600px) {
   .inputLabel {
-    display: flex;
+    width: 85%;
+    display: block;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
-}
 
-.inputField {
-  flex-grow: 1;
-  max-width: 310px;
-  border-radius: 10px;
-}
+  @media screen and (min-width: 600px) {
+    .inputLabel {
+      display: flex;
+    }
+  }
+
+  .inputField {
+    flex-grow: 1;
+    max-width: 310px;
+    border-radius: 10px;
+  }

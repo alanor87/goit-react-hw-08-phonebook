@@ -8,10 +8,11 @@
     color: white;
 }
 
+.navLink:hover,
 .activeNavLink {
     color: rgb(51, 194, 233);
 }
 
 .navLink:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 20px;
 }

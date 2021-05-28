@@ -1,0 +1,8 @@
+.contacts {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  padding: 20px 40px;
+}
