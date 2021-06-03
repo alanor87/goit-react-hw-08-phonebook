@@ -9,6 +9,7 @@ import { getFilteredContacts } from "../../redux/entries/entries-selectors";
 import styles from "./PbookList.module.css";
 
 class PbookList extends React.Component {
+  
   componentDidMount() {
     this.props.onFetchEntries();
   }
@@ -50,7 +51,7 @@ const mapStateToProps = (state) => ({
   loading: getLoadingState(state),
 });
 const mapDispatchToProps = (dispatch) => ({
-  onDelete: (event) => dispatch(deleteEntry(Number(event.target.dataset.id))),
+  onDelete: (event) => dispatch(deleteEntry(event.target.dataset.id)),
   onFetchEntries: () => dispatch(fetchEntries()),
 });
 

@@ -93,3 +93,17 @@ input {
   max-width: 310px;
   border-radius: 10px;
 }
+
+.navLink {
+    text-decoration: none;
+    color: white;
+}
+
+.navLink:hover,
+.activeNavLink {
+    color: rgb(51, 194, 233);
+}
+
+.navLink:not(:last-child) {
+    margin-right: 20px;
+}

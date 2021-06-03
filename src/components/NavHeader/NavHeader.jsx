@@ -1,40 +1,23 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { connect } from "react-redux";
 import UserMenu from "../UserMenu";
-import styles from "./NavHeader.module.css";
+import AuthMenu from "../AuthMenu";
+import {
+  isAuthentificated,
+  currentUserEmail,
+} from "../../redux/auth/auth-selectors";
 
-const NavHeader = () => {
+const NavHeader = ({ isAuthentificated, currentUserEmail }) => {
   return (
     <header>
-      <div className={styles.userNav}>
-        <NavLink
-          className={styles.navLink}
-          activeClassName={styles.activeNavLink}
-          exact
-          to="/login"
-        >
-          Login
-        </NavLink>
-        <NavLink
-          className={styles.navLink}
-          activeClassName={styles.activeNavLink}
-          exact
-          to="/register"
-        >
-          Register
-        </NavLink>
-        <NavLink
-          className={styles.navLink}
-          activeClassName={styles.activeNavLink}
-          exact
-          to="/contacts"
-        >
-          Contacts
-        </NavLink>
-      </div>
-      <UserMenu />
+      {isAuthentificated ? <UserMenu email={currentUserEmail} /> : <AuthMenu />}
     </header>
   );
 };
 
-export default NavHeader;
+const mapStateToProps = (state) => ({
+  isAuthentificated: isAuthentificated(state),
+  currentUserEmail: currentUserEmail(state),
+});
+
+export default connect(mapStateToProps)(NavHeader);

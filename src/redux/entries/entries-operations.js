@@ -12,8 +12,6 @@ import {
     fetchEntriesError,
 } from './entries-actions';
 
-axios.defaults.baseURL = 'http://localhost:4040';
-
 export const fetchEntries = () => dispatch => {
     dispatch(fetchEntriesRequest());
     axios.get('/contacts')

@@ -19,9 +19,9 @@ const entries = createReducer([], {
 });
 
 const error = createReducer('', {
-    [fetchEntriesError]: (_, { payload }) => { alert('Error fetching item!'); return payload },
-    [addEntryError]: (_, { payload }) => { alert('Error adding item!'); return payload },
-    [deleteEntryError]: (_, { payload }) => { alert('Error deleting item!'); return payload },
+    [fetchEntriesError]: (_, { payload }) => { alert(`Error : ${payload}`); return payload },
+    [addEntryError]: (_, { payload }) => { alert(`Error : ${payload}`); return payload },
+    [deleteEntryError]: (_, { payload }) => { alert(`Error : ${payload}`); return payload },
 })
 
 const loading = createReducer(false, {
