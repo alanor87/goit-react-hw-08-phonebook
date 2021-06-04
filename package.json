@@ -1,5 +1,5 @@
 {
-  "name": "goit-react-hw-07-phonebook",
+  "name": "goit-react-hw-08-phonebook",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "netlify deploy -p"
   },
   "eslintConfig": {
     "extends": [
@@ -32,12 +32,7 @@
       "react-app/jest"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alanor87/goit-react-hw-07-phonebook.git"
-  },
-  "homepage": "https://alanor87.github.io/goit-react-hw-07-phonebook",
-  "browserslist": {
+    "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
